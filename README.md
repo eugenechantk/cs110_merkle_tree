@@ -122,3 +122,5 @@ It seems like the Merkle tree has the same space complexity compared to the orig
 (For theory on Audit Proof and the image attached): https://www.certificate-transparency.org/log-proofs-work
 
 (For SHA256 hashing function): https://en.wikipedia.org/wiki/SHA-2
+
+Last Updated: Dec 15 2017 22:45
