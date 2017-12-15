@@ -37,10 +37,12 @@ INSERT operations supports either a string or a list of data values to build the
 ```
 data_set = ("aa","bb","cc","dd")
 
-#hashing each of the data for Merkle tree building
+"""hashing each of the data for Merkle tree building"""
+
 newTree.add_leaf(data_set)
 
-#building the Merkle tree with the hash values
+"""building the Merkle tree with the hash values"""
+
 newTree.make_tree()
 ```
 ### Get Merkle Root
@@ -53,7 +55,8 @@ Merkle tree supports audit proof, where you can validate whether a specific data
 ```
 test_hash = "some 32 bit SHA256 hash value"
 
-#index = the index of the leaf where the test_hash reside; target_hash = the hash value of the data we wish to validate its membership
+"""index = the index of the leaf where the test_hash reside; target_hash = the hash value of the data we wish to validate its membership"""
+
 newTree.proof(newTree.get_proof_index(index),target_hash)
 ```
 
@@ -123,4 +126,4 @@ It seems like the Merkle tree has the same space complexity compared to the orig
 
 (For SHA256 hashing function): https://en.wikipedia.org/wiki/SHA-2
 
-Last Updated: Dec 15 2017 22:45
+Last Updated: Dec 15 2017 22:58
