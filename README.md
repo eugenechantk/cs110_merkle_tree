@@ -55,7 +55,8 @@ Merkle tree supports audit proof, where you can validate whether a specific data
 ```
 test_hash = "some 32 bit SHA256 hash value"
 
-"""index = the index of the leaf where the test_hash reside; target_hash = the hash value of the data we wish to validate its membership"""
+"""index = the index of the leaf where the test_hash reside; 
+target_hash = the hash value of the data we wish to validate its membership"""
 
 newTree.proof(newTree.get_proof_index(index),target_hash)
 ```
@@ -126,4 +127,4 @@ It seems like the Merkle tree has the same space complexity compared to the orig
 
 (For SHA256 hashing function): https://en.wikipedia.org/wiki/SHA-2
 
-Last Updated: Dec 15 2017 22:58
+Last Updated: Dec 15 2017 22:59
