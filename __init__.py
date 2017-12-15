@@ -223,3 +223,4 @@ class MerkleTree:
                 candidate_hash = candidate_hash.encode('hex')
         
         return candidate_hash == merkle_root
+        
